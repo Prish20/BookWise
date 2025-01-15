@@ -66,24 +66,24 @@ Ensure you have the following installed on your machine:
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/your-repo/bookwise.git
-   cd bookwise
-   ```
+    ```bash
+    git clone https://github.com/your-repo/bookwise.git
+    cd bookwise
+    ```
 
 2. Install dependencies:
 
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
 3. Run the development server:
 
-   ```bash
-   npm run dev
-   ```
+    ```bash
+    npm run dev
+    ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
@@ -174,16 +174,16 @@ yarn <script>
 
 - **Config File:** `tailwind.config.ts`
 - Customizations:
-  - Themes and colors.
-  - Custom screen sizes.
-  - Extended utility classes.
+    - Themes and colors.
+    - Custom screen sizes.
+    - Extended utility classes.
 
 ### ESLint
 
 - **Config File:** `eslint.config.mjs`
 - Key Plugins:
-  - `eslint-plugin-tailwindcss`
-  - `eslint-config-prettier`
+    - `eslint-plugin-tailwindcss`
+    - `eslint-config-prettier`
 
 ---
 
@@ -194,17 +194,18 @@ We welcome contributions to enhance BookWise. To contribute:
 1. Fork the repository.
 2. Create a feature branch:
 
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
+    ```bash
+    git checkout -b feature/your-feature-name
+    ```
+
 3. Commit your changes:
-   ```bash
-   git commit -m "Add your message here"
-   ```
+    ```bash
+    git commit -m "Add your message here"
+    ```
 4. Push to your branch:
-   ```bash
-   git push origin feature/your-feature-name
-   ```
+    ```bash
+    git push origin feature/your-feature-name
+    ```
 5. Open a pull request.
 
 ---

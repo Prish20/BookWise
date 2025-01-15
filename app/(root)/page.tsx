@@ -1,11 +1,17 @@
+import BookList from "@/components/BookList";
+import BookOverview from "@/components/BookOverview";
+import { sampleBooks } from "@/constants";
+import React from "react";
 
-import BookList from '@/components/BookList'
-import BookOverview from '@/components/BookOverview'
-import React from 'react'
+const Home = () => (
+    <>
+        <BookOverview {...sampleBooks[0]} />
+        <BookList
+            title="Latest Books"
+            books={sampleBooks}
+            containerClassName="mt-28"
+        />
+    </>
+);
 
-const Home = () => <>
-    <BookOverview />
-    <BookList />
-</>
-
-export default Home
+export default Home;
