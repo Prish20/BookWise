@@ -97,7 +97,7 @@ const AuthForm = <T extends FieldValues>({
                                     <FormLabel className="capitalize">
                                         {
                                             FIELD_NAMES[
-                                            field.name as keyof typeof FIELD_NAMES
+                                                field.name as keyof typeof FIELD_NAMES
                                             ]
                                         }
                                     </FormLabel>
@@ -111,7 +111,7 @@ const AuthForm = <T extends FieldValues>({
                                                 required
                                                 type={
                                                     FIELD_TYPES[
-                                                    field.name as keyof typeof FIELD_TYPES
+                                                        field.name as keyof typeof FIELD_TYPES
                                                     ]
                                                 }
                                                 {...field}
