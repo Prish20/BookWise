@@ -57,6 +57,7 @@ const AuthForm = <T extends FieldValues>({
                 description: isSignIn
                     ? "You have successfully signed in."
                     : "You have successfully signed up.",
+                className: "bg-green-500 border-none",
             });
 
             router.push("/");
