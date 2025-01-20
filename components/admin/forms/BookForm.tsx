@@ -16,8 +16,9 @@ import { bookSchema } from "@/lib/FormValidation/validation";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
-import ImageUpload from "@/components/ImageUpload";
 import { Textarea } from "@/components/ui/textarea";
+import FileUpload from "@/components/FileUpload";
+import ColorPicker from "../ColorPicker";
 
 interface Props extends Partial<Book> {
     type?: "create || update";
@@ -41,7 +42,9 @@ const BookForm = ({ type, ...book }: Props) => {
         },
     });
 
-    const onSubmit = async (values: z.infer<typeof bookSchema>) => {};
+    const onSubmit = async (values: z.infer<typeof bookSchema>) => {
+        console.log(values);
+    };
 
     return (
         <Form {...form}>
@@ -162,7 +165,7 @@ const BookForm = ({ type, ...book }: Props) => {
                                 Book Image
                             </FormLabel>
                             <FormControl>
-                                {/* <ImageUpload
+                                <FileUpload
                                     type="image"
                                     accept="image/*"
                                     placeholder="Upload a book cover"
@@ -170,7 +173,7 @@ const BookForm = ({ type, ...book }: Props) => {
                                     variant="light"
                                     onFileChange={field.onChange}
                                     value={field.value}
-                                /> */}
+                                />
                             </FormControl>
                             <FormMessage />
                         </FormItem>
@@ -185,10 +188,10 @@ const BookForm = ({ type, ...book }: Props) => {
                                 Primary Color
                             </FormLabel>
                             <FormControl>
-                                {/* <ColorPicker
+                                <ColorPicker
                                     onPickerChange={field.onChange}
                                     value={field.value}
-                                /> */}
+                                />
                             </FormControl>
                             <FormMessage />
                         </FormItem>
@@ -225,7 +228,7 @@ const BookForm = ({ type, ...book }: Props) => {
                                 Book Trailer
                             </FormLabel>
                             <FormControl>
-                                {/* <FileUpload
+                                <FileUpload
                                     type="video"
                                     accept="video/*"
                                     placeholder="Upload a book trailer"
@@ -233,7 +236,7 @@ const BookForm = ({ type, ...book }: Props) => {
                                     variant="light"
                                     onFileChange={field.onChange}
                                     value={field.value}
-                                /> */}
+                                />
                             </FormControl>
                             <FormMessage />
                         </FormItem>
